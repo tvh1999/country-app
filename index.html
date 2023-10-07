@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="./assets/css/brands.css" />
+    <link rel="stylesheet" href="./assets/css/solid.css" />
+
+    <link rel="stylesheet" href="./styles.css/style.css" />
+    <link rel="stylesheet" href="./styles.css/responsive.css" />
+    <script type="module" defer src="./controller.js"></script>
+    <title>REST Countries</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__heading">Where in the world?</div>
+      <button class="mode-btn">
+        <i class="fa-regular fa-moon"></i> Dark Mode
+      </button>
+    </header>
+    <main class="main">
+      <div class="options">
+        <form class="options-search">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            class="input-field"
+            placeholder="Search for a country..."
+            type="text"
+          />
+          <input class="submit-btn" type="submit" />
+        </form>
+        <div class="options-sort">
+          Filter by Region
+          <i class="fa-solid fa-caret-down"></i>
+          <ul class="region-list">
+            <li class="region" data-region="Africa">Africa</li>
+            <li class="region" data-region="America">America</li>
+            <li class="region" data-region="Asia">Asia</li>
+            <li class="region" data-region="Europe">Europe</li>
+            <li class="region" data-region="Oceania">Oceania</li>
+          </ul>
+        </div>
+      </div>
+      <div class="countries-display">
+        <!-- <div class="country">
+          <div class="country__flag">
+            <img src="#" alt="" />
+          </div>
+          <div class="country-detail">
+            <h4 class="country-detail__name">Germany</h4>
+            <p class="population-card">
+              Population:<span class="population-info">81.770.900</span>
+            </p>
+            <p class="region-card">
+              Region:<span class="region-info">Europe</span>
+            </p>
+            <p class="capital-card">
+              Capital:<span class="capital-info">Berlin</span>
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </main>
+  </body>
+</html>
